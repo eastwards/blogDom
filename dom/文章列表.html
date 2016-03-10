@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- disable iPhone inital scale -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="dist/css/base.css"/>
+    <link rel="stylesheet" href="dist/css/style.css"/>
+    <!-- html5.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="src/script/html5.js"></script>
+    <![endif]-->
+    <!-- css3-mediaqueries.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="src/script/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="container f-clearfix">
+        <a href="" class="m-logo">夏日星的博客</a>
+        <nav>
+            <ul>
+                <li class="cur"><a href="">首页</a></li>
+                <li><a href="">博客</a></li>
+                <li><a href="">留言</a></li>
+                <li><a href="">实验室</a></li>
+                <li><a href="">前端资源</a></li>
+                <li><a href="">碎碎念</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container f-clearfix">
+    <div class="m-article">
+        <article>
+            <section class="m-article-item">
+                <h1>从网易与淘宝的font-size思考前端设计稿与工作流</h1>
+                <div class="m-article-txt f-clearfix">
+                    <a href="" class="m-article-img"><img src="dist/images/img01.jpg" alt=""/></a>
+                    <p>偶然间发现这篇文章，可以说，这是我见到的对移动REM做的最详细，最细心的一篇总结性文章，果断转载。本文结合作者（<a href="">流云诸葛</a>）对网易与淘宝移动端，首页html元素上的font-size这个属性的思考与学习，讨论html5设计稿尺寸以及前端与设计之间协作流程的问题，内容较多，但对你的技术和工作一定有价值</p>
+                    <p>最近阅读白树的博文《移动web资源整理》时，他在博文中有一段指出，如果html5要适应各种分辨率的移动设备，应该使用rem这样的尺寸单位，同时给出了一段针对各个分辨率范围在html上设置font-size的代码：</p>
+                    <p>最近阅读白树的博文《移动web资源整理》时，他在博文中有一段指出，如果html5要适应各种分辨率的移动设备，应该使用rem这样的尺寸单位，同时给出了一段针对各个分辨率范围在html上设置font-size的代码：</p>
+                </div>
+                <aside>
+                    <span><i class="iconfont">&#xe601;</i><em>by</em>&nbsp;Summer</span>
+                    <span><i class="iconfont">&#xe600;</i><em>Feb 15,2015</em></span>
+                    <a href=""><i class="iconfont">&#xe603;</i>4 comments</a>
+                </aside>
+            </section>
+            <section class="m-article-item">
+                <h1>Function 类型的七点总结</h1>
+                <div class="m-article-txt f-clearfix">
+                    <p>一、不带圆括号的函数名访问的是函数指针，而非调用函数</p>
+
+                    <pre class="prettyprint lang-js">function sum(num1,num2){
+                       return num1+num2;
+                    }
+                    console.log(sum(10,10));//20
+                    console.log(sum);  //function sum(num1, num2)
+                    console.log(sum()); //NaN
+                    var anotherSum=sum;
+                    console.log(anotherSum(10,10));//20
+                    sum=null;    //使得sum()函数的指针为空
+                    console.log(anotherSum(10,10));//20
+                    console.log(sum(10,10));//uncaught TypeError: sum is not a function </pre>
+
+                </div>
+                <aside>
+                    <span><i class="iconfont">&#xe601;</i><em>by</em>&nbsp;Summer</span>
+                    <span><i class="iconfont">&#xe600;</i><em>Feb 15,2015</em></span>
+                    <a href=""><i class="iconfont">&#xe603;</i>4 comments</a>
+                </aside>
+            </section>
+            <section class="m-article-item">
+                <h1>从网易与淘宝的font-size思考前端设计稿与工作流</h1>
+                <div class="m-article-txt f-clearfix">
+                    <a href="" class="m-article-img"><img src="dist/images/img02.jpg" alt=""/></a>
+                    <p>偶然间发现这篇文章，可以说，这是我见到的对移动REM做的最详细，最细心的一篇总结性文章，果断转载。本文结合作者（<a href="">流云诸葛</a>）对网易与淘宝移动端，首页html元素上的font-size这个属性的思考与学习，讨论html5设计稿尺寸以及前端与设计之间协作流程的问题，内容较多，但对你的技术和工作一定有价值</p>
+                    <p>最近阅读白树的博文《移动web资源整理》时，他在博文中有一段指出，如果html5要适应各种分辨率的移动设备，应该使用rem这样的尺寸单位，同时给出了一段针对各个分辨率范围在html上设置font-size的代码：</p>
+                    <p>最近阅读白树的博文《移动web资源整理》时，他在博文中有一段指出，如果html5要适应各种分辨率的移动设备，应该使用rem这样的尺寸单位，同时给出了一段针对各个分辨率范围在html上设置font-size的代码：</p>
+                </div>
+                <aside>
+                    <span><i class="iconfont">&#xe601;</i><em>by</em>&nbsp;Summer</span>
+                    <span><i class="iconfont">&#xe600;</i><em>Feb 15,2015</em></span>
+                    <a href=""><i class="iconfont">&#xe603;</i>4 comments</a>
+                </aside>
+            </section>
+        </article>
+        <div class="m-pag">
+            <a href=""><</a>
+            <a href="" class="cur">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span>…</span>
+            <a href="">5</a>
+            <a href="">></a>
+        </div>
+    </div>
+    <div class="m-rightMain"></div>
+</div>
+
+<footer>
+    <p>Copyright © 2016 - 2015 Summer. All Rights Reserved.</p>
+</footer>
+<script src="src/script/jshighlight.js"></script>
+</body>
+</html>
