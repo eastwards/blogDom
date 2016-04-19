@@ -1,0 +1,211 @@
+@import "function";
+/* 全局公用 */
+
+//header
+header{
+    @include textAlign;
+    padding: $basePx10*3 $resetPX;
+    background: $white;
+    .ms-logo{
+        color: #b4b4b4;
+        p{
+            padding-top: $basePx10;
+        }
+    }
+}
+
+//ms-nav
+.ms-nav{
+    background: $white;
+    border: 1px solid $rgbF5;
+    height: $basePx10*5;
+}
+nav{
+    @include float;
+    line-height: $basePx10*5;
+    a{
+        display: nth($baseDisplay,2);
+        vertical-align: $middle;
+        margin: $resetPX $basePx15;
+        color: $rgb2f;
+        font-size: $fz16;
+        &:hover{
+            color: $pink;
+        }
+    }
+}
+.ms-search{
+    @include float(right);
+    padding: $basePx10+2 $resetPX;
+    input[type="text"]{
+        padding: $resetPX $basePx15;
+        width: $basePx10*14;
+        font-size: $fz14;
+        height: $basePx26;
+        line-height: $basePx26;
+        outline: nth($baseDisplay,3);
+        font-family: $fontFamily;
+        margin-right: $basePx15;
+        border: $resetBorder;
+        border-right: 1px solid #c4c4c4;
+        vertical-align: $middle;
+    }
+    label{
+        vertical-align: $middle;
+        display: nth($baseDisplay,2);
+        height: $basePx26;
+        position: relative;
+        .iconfont{
+            font-size: $basePx10+$basePx15;
+            color: $rgb2f;
+            position: absolute;
+            top: -($basePx5+2);
+        }
+        input[type="submit"]{
+            background: nth($baseDisplay,3);
+            border: $resetBorder;
+            opacity: $resetPX;
+        }
+    }
+}
+
+//footer
+footer{
+    background: $white;
+    margin-top: $basePx10*6;
+    padding: $basePx10*4;
+    @include textAlign;
+    font-size: $fz14;
+    color: $rgb9;
+}
+
+//pag
+.ms-pag{
+    padding-top: $basePx26;
+    span,a{
+        @include textAlign;
+        display: nth($baseDisplay,2);
+        vertical-align: $middle;
+        margin: 0 $basePx5;
+        color: $rgb9;
+    }
+    a{
+        $wh: $basePx10*4;
+        width: $wh;
+        height: $wh;
+        line-height: $wh;
+        color: $pink;
+        font-size: $fz14;
+        border-radius: 50%;
+        background: $white;
+    }
+    a.cur,
+    a:hover{
+        background: $pink;
+        border-color: $pink;
+        color: $white;
+    }
+}
+.ms-reset-pag{
+    @include textAlign;
+}
+
+//代码高亮
+pre{
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    line-height: $basePx10*2;
+    padding: $basePx10 $basePx10 $basePx10 $basePx10*6;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: $overflow;
+    word-wrap: normal;
+    margin: $basePx10 $resetPX;
+    color: #383937;
+    background: $white;
+    border: 1px solid #e8e9e7;
+}
+pre::-webkit-scrollbar{
+    width: $basePx5;
+    height: $basePx5;
+}
+pre::-webkit-scrollbar-thumb:vertical{
+    background-color: #000;
+}
+.jshl-linenum{
+    position: absolute;
+    z-index: $resetPX;
+    left: $resetPX;
+    top: $basePx10;
+    line-height: inherit;
+    border-right: 1px #eee solid;
+    padding: $resetPX $basePx10;
+    text-align: right;
+    color:  rgba(0,0,0,0.3);
+}
+pre .com,
+pre .doc{
+    color:#919290
+}
+pre .str{
+    color:#D80800;
+}
+pre .key{
+    color:#a71d5d;
+}
+pre .obj{
+    color:#0086b3;
+}
+pre .num{
+    color:#A55CD6;
+}
+pre .ope{
+    color:#687687;
+}
+pre .bol{
+    color:#0086b3;
+}
+
+// html styles
+pre .mrk{
+    color:#6D8FA9;
+}
+pre .attr{
+    color:#795da3;
+}
+pre .val{
+    color:#0086b3;
+}
+pre .php-com{
+    color: #CCC;
+}
+pre .php-mrk{
+    color: red;
+    font-weight: bold;
+}
+pre .php-bol{
+    color: #F92665;
+    font-style: italic;
+}
+pre .php-var{
+    color: #A6E22E;
+}
+
+//图标
+@font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1460621943_916319.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_1460621943_916319.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1460621943_916319.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1460621943_916319.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1460621943_916319.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family: "iconfont" !important;
+    font-size: $fz16;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: $rgb9;
+}
+

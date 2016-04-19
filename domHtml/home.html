@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- disable iPhone inital scale -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="dist/css/base.css"/>
+    <link rel="stylesheet" href="dist/css/style.css"/>
+    <!-- html5.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="dist/script/html5.js"></script>
+    <![endif]-->
+    <!-- css3-mediaqueries.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="dist/script/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <a href="" class="ms-logo">
+        <img src="dist/images/logo.png" alt=""/>
+        <p>生活不止眼前的苟且，还有诗和远方的田野</p>
+    </a>
+</header>
+
+<div class="ms-nav">
+    <div class="container f-clearfix">
+        <nav>
+            <a href="">首页</a>
+            <a href="">博客</a>
+            <a href="">收藏夹</a>
+            <a href="">闲言碎语</a>
+            <a href="">碎碎念</a>
+        </nav>
+        <div class="ms-search">
+            <form action="">
+                <input type="text" value="" placeholder="请输入您要查找的内容" name="" />
+                <label><i class="iconfont">&#xe603;</i><input type="submit" /></label>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container f-clearfix">
+    <div class="ms-article">
+        <section class="ms-article-item">
+            <img src="dist/images/img.jpg" alt=""/>
+            <div class="ms-article-main">
+                <h6>从网易与淘宝的font-size思考前端设计稿与工作流</h6>
+                <div class="ms-article-txt">
+                    <p>偶然间发现这篇文章，可以说，这是我见到的对移动REM做的最详细，最细心的一篇总结性文章，果断转载。本文结合作者（<a href="">流云诸葛</a>）对网易与淘宝移动端首页html元素上的font-size这个属性的思考与学习，讨论html5设计稿尺寸以及前端与设计之间协作流程的问题，内容较多，但对你的技术和工作一定有价值最近阅读白树的博文《移动web资源整理》时，他在博文中有一段指出，如果html5要适应各种分辨率的移动设备，应该使用rem这样的尺寸单位，同时给出了一段针对各个分辨率范围在html上设置font-size的代码：</p>
+                </div>
+                <div class="ms-article-btn f-clearfix">
+                    <a href="" class="us-more">read more</a>
+                    <div class="us-share">
+                        <span class="us-share-itme">
+                            <a href=""><i class="iconfont">&#xe602;</i></a>
+                            <a href=""><i class="iconfont">&#xe601;</i></a>
+                            <a href=""><i class="iconfont">&#xe604;</i></a>
+                        </span>
+                        <a href=""><i class="iconfont cur">&#xe60f;</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-tag">
+                <div class="ms-date">
+                    <span class="ms-date-year">2016</span>
+                    <span class="ms-date-month">MAR</span>
+                    <span class="ms-date-day">/14</span>
+                </div>
+                <div class="ms-comments-tag">
+                    <i class="iconfont">&#xe600;</i>
+                    <span class="ms-comments-num"><a href="">105</a></span>
+                </div>
+            </div>
+        </section>
+        <section class="ms-article-item">
+            <div class="ms-article-main">
+                <h6>font-size字体</h6>
+                <div class="ms-article-txt">
+                    <p>在实际项目中，把与元素尺寸有关的css，如width,height,line-height,margin,padding等都以rem作为单位，这样页面在不同设备下就能保持一致的网页布局。举例来说，网页有一个.item类，设置了width为3.4rem，该类在不同分辨率下对应的实际宽度如下：</p>
+                    <pre class="prettyprint linenums lang-js">
+function sum(num1,num2){
+   return num1+num2;
+}
+console.log(sum(10,10)); //20
+console.log(sum);  //function sum(num1, num2)
+console.log(sum()); //NaN
+var anotherSum=sum;
+console.log(anotherSum(10,10)); //20
+sum=null;    //使得sum()函数的指针为空
+console.log(anotherSum(10,10));//20
+console.log(sum(10,10)); //uncaught TypeError: sum is not a function
+                    </pre>
+                </div>
+                <div class="ms-article-btn f-clearfix">
+                    <a href="" class="us-more">read more</a>
+                    <div class="us-share">
+                        <span class="us-share-itme">
+                            <a href=""><i class="iconfont">&#xe602;</i></a>
+                            <a href=""><i class="iconfont">&#xe601;</i></a>
+                            <a href=""><i class="iconfont">&#xe604;</i></a>
+                        </span>
+                        <a href=""><i class="iconfont cur">&#xe60f;</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-tag">
+                <div class="ms-date">
+                    <span class="ms-date-year">2016</span>
+                    <span class="ms-date-month">MAR</span>
+                    <span class="ms-date-day">/14</span>
+                </div>
+                <div class="ms-comments-tag">
+                    <i class="iconfont">&#xe600;</i>
+                    <span class="ms-comments-num"><a href="">105</a></span>
+                </div>
+            </div>
+        </section>
+        <div class="ms-pag">
+            <a href="">&lt;&lt;</a>
+            <a href="" class="cur">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span>…</span>
+            <a href="">5</a>
+            <a href="">&gt;&gt;</a>
+        </div>
+    </div>
+    <div class="ms-sliders">
+        <section class="ms-sliders-itme">
+            <div class="ms-sliders-title"><span>关&nbsp;于&nbsp;我</span></div>
+            <div class="ms-about">
+                <span><em><img src="dist/images/img2.jpg" alt=""/></em></span>
+                <h6>Folin</h6>
+                <p>夏日星个人网站 www.smohan.net 官方微博</p>
+                <article>
+                    <a href=""><i class="iconfont">&#xe601;</i></a>
+                    <a href=""><i class="iconfont">&#xe605;</i></a>
+                </article>
+            </div>
+        </section>
+        <section class="ms-sliders-itme">
+            <div class="ms-sliders-title"><span>分类目录</span></div>
+            <ul class="ms-category">
+                <li><a href="">全部博文（37）</a></li>
+                <li><a href="">前端开发 （22）</a></li>
+                <li><a href="">移动前端 （12）</a></li>
+                <li><a href="">前端分享 （5）</a></li>
+                <li><a href="">前端文档 （5）</a></li>
+                <li><a href="">学习笔记 （5）</a></li>
+                <li><a href="">夏日末语 （10）</a></li>
+            </ul>
+        </section>
+        <section class="ms-sliders-itme">
+            <div class="ms-sliders-title"><span>最新帖子</span></div>
+            <ul class="ms-list">
+                <li><a href="">微信公众平台开发 JS-SDK开发（图像接口实例）</a></li>
+                <li><a href="">HTML5音乐列表播放器SMusic开发总结</a></li>
+                <li><a href="">为你的博客添加简单的CSS3音乐播放器</a></li>
+                <li><a href="">博客2015版改版总结</a></li>
+                <li><a href="">从这几个月的一点感悟谈改版</a></li>
+                <li><a href="">利用新浪微博接口生成漂亮的微博卡片</a></li>
+                <li><a href="">PHP关于数据分页后楼层的计算</a></li>
+                <li><a href="">王子墨JavaScript思维导图（附下载地址）</a></li>
+                <li><a href="">关于sMusic第二版的一些想法</a></li>
+                <li><a href="">45个实用的JavaScript技巧、窍门和最佳</a></li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<footer>Copyright © 2016 - 2015 Folin. All Rights Reserved.</footer>
+<script src="dist/script/jshighlight.js"></script>
+</body>
+</html>

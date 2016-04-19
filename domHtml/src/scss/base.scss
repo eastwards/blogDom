@@ -1,0 +1,77 @@
+@import "normalize";
+@import "function";
+/*
+	@名称: base
+	@功能: 重设浏览器默认样式
+	@作者: Summer  2014-2-16
+*/
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html{
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,p,
+pre,code,blockquote,
+form,fieldset,legend,input,textarea,button,
+th,td,hr,
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    margin: $resetPX;
+    padding: $resetPX;
+}
+ul{
+    list-style: none;
+}
+img{
+    border: $resetBorder;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    line-height: $baseLineHeight;
+    /*
+      -webkit-font-smoothing 在win7 Safari 下面会触发属性导致字体模糊 设置 antialiased
+          none  禁用该属性
+          subpixel-antialiased  次像素抗锯齿（默认值
+          antialiased 抗锯齿（效果更明显）
+    */
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizespeed;
+    background: #f9f9f9;
+}
+
+/*清除浮动*/
+.f-clearfix{
+    &:before,
+    &:after{
+        content: '.';
+        display: nth($baseDisplay,1);
+        overflow: $overflow;
+        visibility: $overflow;
+        font-size: $resetPX;
+        line-height: $resetPX;
+        width: $resetPX;
+        height: $resetPX;
+    }
+    &:after{
+        clear: both;
+    }
+}
+.f-clearfix{
+    zoom: 1;
+}
+
+/* ie输往框字体默认颜色 */
+.ms-phColor{
+    color: #bdc3c7!important;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}

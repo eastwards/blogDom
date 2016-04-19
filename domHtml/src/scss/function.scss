@@ -1,0 +1,42 @@
+//重置
+$htmlSize: 62.5%;
+$fontSize: 12px;
+$fontFamily: 'microsoft yahei', 'helvetica neue', 'hiragino sans gb', 'stheiti','\5FAE\8F6F\96C5\9ED1', 'tahoma';
+$baseLineHeight: 1.5;
+$resetPX: 0;
+$resetBorder: 0 none;
+
+//公用
+//color
+$white: #ffffff;
+$rgb2f: #2f2f2f;
+$rgb6: #666666;
+$rgb9: #999999;
+$rgbF5: #f5f5f5;
+$pink: #e15d5d;
+
+//字体大小
+$fz13: 13px;
+$fz14: 14px;
+$fz16: 16px;
+$fz26: 26px;
+
+//大小
+$basePx5: 5px;
+$basePx10: 10px;
+$basePx15: 15px;
+$basePx26: $fz26;
+
+
+
+$baseDisplay: block inline-block none inline;
+$middle: middle;
+$overflow: hidden;
+
+@mixin float($float:left){
+    float: $float;
+}
+
+@mixin textAlign($align:center){
+    text-align: $align;
+}

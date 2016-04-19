@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* 全局公用 */
+header {
+  text-align: center;
+  padding: 30px 0;
+  background: #ffffff; }
+  header .ms-logo {
+    color: #b4b4b4; }
+    header .ms-logo p {
+      padding-top: 10px; }
+
+.ms-nav {
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  height: 50px; }
+
+nav {
+  float: left;
+  line-height: 50px; }
+  nav a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+    color: #2f2f2f;
+    font-size: 16px; }
+    nav a:hover {
+      color: #e15d5d; }
+
+.ms-search {
+  float: right;
+  padding: 12px 0; }
+  .ms-search input[type="text"] {
+    padding: 0 15px;
+    width: 140px;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    outline: none;
+    font-family: "microsoft yahei", "helvetica neue", "hiragino sans gb", "stheiti", "微软雅黑", "tahoma";
+    margin-right: 15px;
+    border: 0 none;
+    border-right: 1px solid #c4c4c4;
+    vertical-align: middle; }
+  .ms-search label {
+    vertical-align: middle;
+    display: inline-block;
+    height: 26px;
+    position: relative; }
+    .ms-search label .iconfont {
+      font-size: 25px;
+      color: #2f2f2f;
+      position: absolute;
+      top: -7px; }
+    .ms-search label input[type="submit"] {
+      background: none;
+      border: 0 none;
+      opacity: 0; }
+
+footer {
+  background: #ffffff;
+  margin-top: 60px;
+  padding: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #999999; }
+
+.ms-pag {
+  padding-top: 26px; }
+  .ms-pag span, .ms-pag a {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    color: #999999; }
+  .ms-pag a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #e15d5d;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #ffffff; }
+  .ms-pag a.cur,
+  .ms-pag a:hover {
+    background: #e15d5d;
+    border-color: #e15d5d;
+    color: #ffffff; }
+
+.ms-reset-pag {
+  text-align: center; }
+
+pre {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 20px;
+  padding: 10px 10px 10px 60px;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  word-wrap: normal;
+  margin: 10px 0;
+  color: #383937;
+  background: #ffffff;
+  border: 1px solid #e8e9e7; }
+
+pre::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; }
+
+pre::-webkit-scrollbar-thumb:vertical {
+  background-color: #000; }
+
+.jshl-linenum {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 10px;
+  line-height: inherit;
+  border-right: 1px #eee solid;
+  padding: 0 10px;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.3); }
+
+pre .com,
+pre .doc {
+  color: #919290; }
+
+pre .str {
+  color: #D80800; }
+
+pre .key {
+  color: #a71d5d; }
+
+pre .obj {
+  color: #0086b3; }
+
+pre .num {
+  color: #A55CD6; }
+
+pre .ope {
+  color: #687687; }
+
+pre .bol {
+  color: #0086b3; }
+
+pre .mrk {
+  color: #6D8FA9; }
+
+pre .attr {
+  color: #795da3; }
+
+pre .val {
+  color: #0086b3; }
+
+pre .php-com {
+  color: #CCC; }
+
+pre .php-mrk {
+  color: red;
+  font-weight: bold; }
+
+pre .php-bol {
+  color: #F92665;
+  font-style: italic; }
+
+pre .php-var {
+  color: #A6E22E; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("//at.alicdn.com/t/font_1460621943_916319.eot");
+  /* IE9*/
+  src: url("//at.alicdn.com/t/font_1460621943_916319.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1460621943_916319.woff") format("woff"), url("//at.alicdn.com/t/font_1460621943_916319.ttf") format("truetype"), url("//at.alicdn.com/t/font_1460621943_916319.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  color: #999999; }
+
+/*# sourceMappingURL=common.css.map */
